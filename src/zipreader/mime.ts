@@ -40,13 +40,14 @@ export const ext2mime: Record<string, string> = {
     css: "text/css",
     js: "application/javascript",
     json: "application/json",
+    md: "text/plain",
 
     // other types
     zip: "application/zip",
     pdf: "application/pdf",
 }
 
-export function mimeFromFileName(fileName: string) {
+export function mimeFromFileName(fileName: string): string | undefined {
     const extension = fileName.slice(fileName.lastIndexOf(".") + 1)
-    return ext2mime[extension] ?? "application/octet-stream"
+    return ext2mime[extension]
 }
