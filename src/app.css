@@ -1,0 +1,31 @@
+#main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.filelist > li {
+    list-style: "📄";
+}
+
+.filelist > li.folder {
+    list-style: "📁";
+}
+
+.filelist > li.folder.folder-opened-true {
+    list-style: "📂";
+}
+
+.filelist > li.folder > details > summary {
+    cursor: pointer;
+}
+
+.filelist > li.folder > details > summary::marker {
+    content: none;
+}
+
+.filelist > li.folder > details > summary::-webkit-details-marker {
+    display: none;
+}
