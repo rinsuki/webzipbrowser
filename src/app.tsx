@@ -1,13 +1,15 @@
+import {
+    ZipReader,
+    HTTPBlobProvider,
+    BlobProvider,
+    PassthroughBlobProvider,
+} from "async-zip-reader"
 import React, { useState } from "react"
 
 import "./app.css"
 import { TargetFile } from "./types"
-import { ZipReader } from "./zipreader"
-import { HTTPBlobProvider } from "./zipreader/blob-provider/http"
-import { BlobProvider } from "./zipreader/blob-provider/interface"
-import { PassthroughBlobProvider } from "./zipreader/blob-provider/passthrough"
 
-const zipData = new WeakMap<File | { url: string }, ZipReader | Promise<unknown>>()
+const zipData = new WeakMap<File | { url: string }>()
 
 export const DirDetails: React.FC<{
     zipFile: ZipReader

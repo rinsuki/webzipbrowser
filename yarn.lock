@@ -228,11 +228,6 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.0.3.tgz#463fc47f13ec0688a33aec75d078a0541a447199"
   integrity sha512-HzNRZtp4eepNitP+BD6k2L6DROIDG4Q0fm4x+dwfsr6LGmROENnok75VGw40628xf+iR24WeMFcHuuBDUAzzsQ==
 
-"@types/pako@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@types/pako/-/pako-2.0.0.tgz#12ab4c19107528452e73ac99132c875ccd43bdfb"
-  integrity sha512-10+iaz93qR5WYxTo+PMifD5TSxiOtdRaxBf7INGGXMQgTCu8Z/7GYWYFUOS3q/G0nE5boj1r4FEB+WSy7s5gbA==
-
 "@types/prop-types@*":
   version "15.7.5"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
@@ -668,6 +663,14 @@ array.prototype.flatmap@^1.3.0:
     define-properties "^1.1.3"
     es-abstract "^1.19.2"
     es-shim-unscopables "^1.0.0"
+
+async-zip-reader@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/async-zip-reader/-/async-zip-reader-0.1.0.tgz#094e53e6910866813634f1ff21db9f7066af85e7"
+  integrity sha512-xrBHswYklwl/qxSe5x9U2L3LKQZmJGXk4dV9I0dg9bf9KpTFZpqg58ZYw1UzzyqBBuPzs3rw5k1q4EY3+Ny3XQ==
+  dependencies:
+    binarin "^0.2.1"
+    pako "^2.0.4"
 
 balanced-match@^1.0.0:
   version "1.0.2"
